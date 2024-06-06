@@ -9,11 +9,16 @@ module.exports = {
       colors: {
         'primary': '#001D37',
         'secondary': '#475AFF',
+        'gray': '#9F9F9F',
+        'light-gray': '#F3F3F3',
+        'medium-gray': '#A2A2A2',
+        'footer-gray': '#A6A6A6',
+        'dark-gray': '#626262',
         'splash-1': '#D660FF',
         'splash-2': '#6079FF',
       },
       backgroundImage: {
-        'radial-gradient': 'radial-gradient(circle, rgba(214,96,255,1) 0%, rgba(0,29,55,0.5) 60%, rgba(255,255,255,0) 100%)',
+        
       },
     },
   },
