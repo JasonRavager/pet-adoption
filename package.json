@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Pet Adoption Website from Bootcamp",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "postcss input.css -o src/css/styles.css",
     "watch": "postcss input.css -o src/css/styles.css --watch"
