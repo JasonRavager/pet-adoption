@@ -20,6 +20,8 @@ async function petsArea() {
     clone.getElementById("pet-name").textContent = pet.name;
     clone.getElementById("pet-description").textContent = pet.description;
     clone.getElementById("pet-age").textContent = createAgeText(pet.birthYear);
+    
+    if (!pet.photo) pet.photo = "image/fallback.jpg" 
     clone.getElementById("pet-photo").src = pet.photo;
     clone.getElementById("pet-photo").alt = `A ${pet.species} named ${pet.name}`;
 
