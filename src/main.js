@@ -17,6 +17,8 @@ async function petsArea() {
 
   petsData.forEach( pet => {
     const clone = template.content.cloneNode(true);
+
+    clone.querySelector(".pet-card").dataset.species = pet.species;
     clone.getElementById("pet-name").textContent = pet.name;
     clone.getElementById("pet-description").textContent = pet.description;
     clone.getElementById("pet-age").textContent = createAgeText(pet.birthYear);
@@ -52,4 +54,13 @@ allButtons.forEach( el => {
 function handleButtonClick(event) {
   allButtons.forEach( el => el.classList.remove("active") );
   event.target.classList.add("active");
+
+  const currentFilter = event.target.dataset.filter;
+  document.querySelectorAll(".pet-card").forEach( el => {
+    if ( currentFilter == el.dataset.species || currentFilter == "all" ) {
+      el.style.display = "flex";
+    } else {
+      el.style.display = "none";
+    };
+  });
 };

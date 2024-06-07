@@ -117,16 +117,16 @@
       <!-- Filter -->
       <div class="flex text-gray flex-row md:gap-8 md:text-[22px] justify-between md:justify-start sm:text-lg md:mb-14 mb-6">
         <p>Show Me:</p>
-        <button class="active pet-filter-button current:text-secondary current:hover:text-secondary current:underline hover:text-hover-gray">All Pets</button>
-        <button class="pet-filter-button current:text-secondary current:hover:text-secondary current:underline hover:text-hover-gray">Only Dogs</button>
-        <button class="pet-filter-button current:text-secondary current:hover:text-secondary current:underline hover:text-hover-gray">Only Cats</button>
+        <button data-filter="all" class="active pet-filter-button current:text-secondary current:hover:text-secondary current:underline hover:text-hover-gray">All Pets</button>
+        <button data-filter="dog" class="pet-filter-button current:text-secondary current:hover:text-secondary current:underline hover:text-hover-gray">Only Dogs</button>
+        <button data-filter="cat" class="pet-filter-button current:text-secondary current:hover:text-secondary current:underline hover:text-hover-gray">Only Cats</button>
       </div>
 
       <!-- Pet Cards -->
       <div class="grid justify-between grid-cols-1 lg:grid-cols-2 gap-y-7 gap-x-8" id="list-of-pets"></div>
 
       <template id="pet-card-template">
-        <div class="rounded-[20px] border border-light-gray shadow-md overflow-hidden flex flex-row-reverse">
+        <div class="rounded-[20px] border border-light-gray shadow-md overflow-hidden flex flex-row-reverse pet-card">
           <div class="w-2/3 py-2 pl-4 pr-3 space-y-2 sm:py-6 sm:pr-6 sm:space-y-6 sm:pl-7">
             <div class="flex items-center gap-2 sm:gap-5">
               <h3 id="pet-name" class="font-semibold text-xl sm:text-[26px]"></h3>
