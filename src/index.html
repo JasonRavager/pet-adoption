@@ -42,7 +42,7 @@
               </defs>
             </svg>          
             <h2 class="mt-10 text-2xl font-bold">Sunny Play</h2>
-            <p class="pb-8 sm:text-lg/7 text-base/7">Our center is located in beautiful Miami, and it&rsquo;s currently 84&deg;F at our pet playground.</p>
+            <p class="pb-8 sm:text-lg/7 text-base/7">Our center is located in beautiful Miami, and it&rsquo;s currently <span id="current-temp"></span>&deg;F at our pet playground.</p>
           </div>
         </div>
         <!-- Card 2 -->
@@ -121,7 +121,6 @@
         <button class="">Only Cats</button>
       </div>
 
-      <!-- TODO: put image on top for mobile screens -->
       <!-- Pet Cards -->
       <div class="grid justify-between grid-cols-1 lg:grid-cols-2 gap-y-7 gap-x-8">
         <!-- Card #1 -->
@@ -220,5 +219,7 @@
   <footer class="w-11/12 mx-auto mb-16 text-center sm:w-8/12">
     <p class="text-sm text-footer-gray">&copy; 2023 Fake Adoption Center. All rights reserved.</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 </html>

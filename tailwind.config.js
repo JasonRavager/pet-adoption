@@ -18,9 +18,6 @@ module.exports = {
         'splash-1': '#D660FF',
         'splash-2': '#6079FF',
       },
-      backgroundImage: {
-        
-      },
     },
   },
   plugins: [],
